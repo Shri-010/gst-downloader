@@ -1,0 +1,18 @@
+# Local files and downloaded taxpayer data must not enter the repository.
+.env
+.env.*
+!.env.example
+node_modules/
+GST-Downloads/
+downloads/
+*.zip
+*.crx
+*.pem
+*.key
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.log
+Thumbs.db
+.DS_Store

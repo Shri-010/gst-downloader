@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GST Downloader",
+  "version": "0.8.2",
+  "minimum_chrome_version": "120",
+  "description": "Download a period range of GSTR-1 ZIP, GSTR-2B JSON plus Excel, or GSTR-3B PDF using your logged-in GST tab.",
+  "action": { "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["activeTab", "scripting", "storage", "downloads", "alarms"],
+  "host_permissions": [
+    "https://services.gst.gov.in/*",
+    "https://return.gst.gov.in/*",
+    "https://gstr2b.gst.gov.in/*"
+  ]
+}

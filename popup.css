@@ -1,0 +1,12 @@
+body { width: 370px; padding: 18px; margin: 0; font: 14px/1.5 system-ui,sans-serif; color: #172b42; background: #f7f9fc; }
+h1 { font-size: 21px; margin: 0 0 8px; } small { font-size: 12px; color: #60748c; }
+p { margin: 8px 0 14px; } .hint { font-size: 12px; color: #53667d; }
+.banner { padding: 10px; background: #e6edf5; border-radius: 6px; margin: 14px 0; overflow-wrap: anywhere; }
+label { display: block; font-weight: 600; } input { box-sizing: border-box; width: 100%; font: inherit; padding: 10px; border: 1px solid #a9b8c9; border-radius: 6px; margin: 6px 0 12px; }
+button { width: 100%; padding: 12px; color: white; background: #164f9d; border: 0; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: .55; cursor: default; } #status { font-weight: 600; overflow-wrap: anywhere; } #status.failed { color: #a32222; } #status.done { color: #17663e; }
+ol { padding-left: 22px; font-size: 12px; overflow-wrap: anywhere; } li { margin: 7px 0; }
+select { box-sizing: border-box; width: 100%; padding: 10px; margin: 6px 0 12px; font: inherit; border: 1px solid #a9b8c9; border-radius: 6px; background: white; }
+#cancel { margin-top: 8px; background: #65758a; }
+
+#downloadR1 { margin-top: 8px; }

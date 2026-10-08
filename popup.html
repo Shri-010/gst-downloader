@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>GST Downloader</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <h1>GST Downloader <small>0.8.2</small></h1>
+  <p>Save returns from your logged-in GST account.</p>
+  <div id="tabCheck" class="banner">Checking GST tab…</div>
+  <label for="period">From period (MMYYYY)</label>
+  <input id="period" maxlength="6" inputmode="numeric" placeholder="032026">
+  <label for="periodTo">To period (MMYYYY, inclusive)</label>
+  <input id="periodTo" maxlength="6" inputmode="numeric" placeholder="032026">
+  <label for="cadence">Periods to include</label>
+  <select id="cadence"><option value="monthly">Every month</option><option value="quarterly">Quarter-ending months only</option></select>
+  <label for="returnType">Return</label>
+  <select id="returnType"><option value="GSTR-2B">GSTR-2B — JSON + Excel</option><option value="GSTR-1">GSTR-1 — request & download JSON ZIP</option><option value="GSTR-3B">GSTR-3B — PDF</option></select>
+  <p id="rangePreview" class="hint"></p>
+  <button id="start" disabled>Download range</button>
+  <button id="requestR1" hidden disabled>Request files</button>
+  <button id="downloadR1" hidden disabled>Download files</button>
+  <button id="cancel" hidden>Stop waiting</button>
+  <p class="hint">GSTR-1: Request files submits all selected periods and stops. Download files checks and saves those requested files. Pending files are checked every 30 seconds. All available file parts are downloaded.</p>
+  <p class="hint">Stay logged in to GST. The extension uses this tab to open the statement, select your period and save the data automatically. No manual navigation is needed. You can close this popup while it runs; keep the GST tab open.</p>
+  <div id="status" role="status" aria-live="polite">Ready</div>
+  <div id="batchProgress"></div>
+  <ol id="log"></ol>
+  <p class="hint">GSTR-1 ZIP and monthly 2B JSON: Downloads/GST-Downloads. PDF and Excel: your normal Chrome download folder. No passwords, cookies or session tokens are collected.</p>
+  <script src="validation.js"></script><script src="popup.js"></script>
+</body></html>
